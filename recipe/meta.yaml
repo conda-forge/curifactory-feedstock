@@ -29,7 +29,6 @@ requirements:
     - python-graphviz
     - matplotlib-base
     - psutil
-    - dataclasses
     - rich
 
 test:
