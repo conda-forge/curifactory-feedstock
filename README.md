@@ -1,11 +1,11 @@
-About curifactory
-=================
+About curifactory-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/curifactory-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ORNL/curifactory
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/curifactory-feedstock/blob/main/LICENSE.txt)
 
 Summary: An experiment workflow and organization tool
 
