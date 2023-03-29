@@ -1,5 +1,5 @@
 {% set name = "curifactory" %}
-{% set version = "0.9.3" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/curifactory-{{ version }}.tar.gz
-  sha256: 5cb4b5d86cd553d58be67d402303865ce264bcdbb53ac3534d7395f19fe488a3
+  sha256: fbc36c651f3dc0727f68ec4033726619759984accc26cde8cf4bc8f1dcdc1c6d
 
 build:
   entry_points:
@@ -19,10 +19,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - numpy
     - pandas
     - ipynb-py-convert
