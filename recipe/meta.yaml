@@ -1,5 +1,5 @@
 {% set name = "curifactory" %}
-{% set version = "0.11.1" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/curifactory-{{ version }}.tar.gz
-  sha256: fbc36c651f3dc0727f68ec4033726619759984accc26cde8cf4bc8f1dcdc1c6d
+  sha256: 52e45eeefaff1715a049205ac40f93b44c83c8c14715ade79dbe301b04df1548
 
 build:
   entry_points:
@@ -30,6 +30,7 @@ requirements:
     - matplotlib-base
     - psutil
     - rich
+    - argcomplete
 
 test:
   imports:
