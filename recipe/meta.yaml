@@ -30,6 +30,7 @@ requirements:
     - matplotlib-base
     - psutil
     - rich
+    - argcomplete
 
 test:
   imports:
