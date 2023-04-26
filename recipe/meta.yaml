@@ -1,5 +1,5 @@
 {% set name = "curifactory" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/curifactory-{{ version }}.tar.gz
-  sha256: fafd49ef52780c6f3c0d5a3e128eabb948b3c132867a8b00b971ba58e6ebed81
+  sha256: bfbf26c1e41e1f508f2a68bce56bd59d0f9bd9d343ed27b21dbbd6dedf8e9427
 
 build:
   entry_points:
