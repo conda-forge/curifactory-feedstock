@@ -11,7 +11,7 @@ source:
 
 build:
   entry_points:
-    - experiment=curifactory.experiment:main
+    - experiment=curifactory.cli:main
     - curifactory=curifactory.project:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
