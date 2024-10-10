@@ -1,5 +1,5 @@
 {% set name = "curifactory" %}
-{% set version = "0.17.1" %}
+{% set version = "0.18.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/curifactory-{{ version }}.tar.gz
-  sha256: 93ab8eaef2fba7344f7f5dfa426b5310d9e640cd14bfeb59f1032be8f526867c
+  sha256: 4c0580a3f1741296d2794473a0b2da84c13f603f5fb94bef36ed62f0b8d79f48
 
 build:
   entry_points:
@@ -21,6 +21,7 @@ requirements:
   host:
     - python >=3.9
     - pip
+    - setuptools
   run:
     - python >=3.9
     - numpy
@@ -53,7 +54,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - WildfireXIII
+    - WarmCyan
     - mbadams5
     - stewartsl
-    - jasonmhite
