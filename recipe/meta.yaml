@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/curifactory-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/curifactory-{{ version }}.tar.gz
   sha256: 4c0580a3f1741296d2794473a0b2da84c13f603f5fb94bef36ed62f0b8d79f48
 
 build:
@@ -15,15 +15,15 @@ build:
     - curifactory=curifactory.project:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy
     - pandas
     - ipynb-py-convert
@@ -42,6 +42,7 @@ test:
     - curifactory --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ORNL/curifactory
