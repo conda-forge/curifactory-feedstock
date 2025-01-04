@@ -147,8 +147,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@WildfireXIII](https://github.com/WildfireXIII/)
-* [@jasonmhite](https://github.com/jasonmhite/)
+* [@WarmCyan](https://github.com/WarmCyan/)
 * [@mbadams5](https://github.com/mbadams5/)
 * [@stewartsl](https://github.com/stewartsl/)
 
