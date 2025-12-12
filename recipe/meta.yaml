@@ -15,15 +15,15 @@ build:
     - curifactory=curifactory.project:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy
     - pandas
     - ipynb-py-convert
@@ -42,6 +42,7 @@ test:
     - curifactory --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ORNL/curifactory
