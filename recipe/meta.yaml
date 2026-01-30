@@ -1,5 +1,5 @@
 {% set name = "curifactory" %}
-{% set version = "0.19.0" %}
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,15 +7,16 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/curifactory-{{ version }}.tar.gz
-  sha256: 16892fe54b2da0ee79fb985815c840fcd7219941bed2274210508bb7fb0cfd91
+  sha256: 08d1edb72470e51e1046ae81bd6f792b1b2e5bc34e1e2eba77ac5736f4de8d43
 
 build:
   entry_points:
     - experiment=curifactory.cli:main
     - curifactory=curifactory.project:main
+    - cf=curifactory.experimental.cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -32,6 +33,7 @@ requirements:
     - psutil
     - rich
     - argcomplete
+    - duckdb
 
 test:
   imports:
