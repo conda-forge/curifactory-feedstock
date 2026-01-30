@@ -13,6 +13,7 @@ build:
   entry_points:
     - experiment=curifactory.cli:main
     - curifactory=curifactory.project:main
+    - cf=curifactory.experimental.cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
@@ -32,6 +33,7 @@ requirements:
     - psutil
     - rich
     - argcomplete
+    - duckdb
 
 test:
   imports:
